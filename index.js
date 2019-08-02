@@ -107,3 +107,20 @@ else{
 
   container.append(`<p> sorry bro</p>`);
 }
+
+
+
+HOW TO CHOOSE RANDOM ITEM
+
+function showTruth(){
+//1) random num between 0 & 1
+var randomNum = Math.random();
+//2)make num larger by multiplying by length of array
+var multArrLength = randomNum * arrayTruth.length;
+//3) round number down
+var round = Math.floor(multArrLength);
+//4)  picks random index number from array and assigns to variable
+var showNum = arrayTruth[round];
+//5) appends to html page using INTERPOLATION and BACKTICKS-0p[]
+truthContainer.append(`<h2> ${showNum}</h2>`);
+};
